@@ -28,7 +28,8 @@ RUN install_packages ca-certificates curl libssl3 procps xmlstarlet zlib1g
 RUN mkdir -p /tmp/bitnami/pkg/cache/ ; cd /tmp/bitnami/pkg/cache/ ; \
     COMPONENTS=( \
       "render-template-1.0.6-9-linux-${OS_ARCH}-debian-12" \
-      "java-17.0.10-13-2-linux-${OS_ARCH}-debian-12" \
+      # "java-17.0.10-13-2-linux-${OS_ARCH}-debian-12" \
+      "java-1.8.402-7-2-linux-${OS_ARCH}-debian-12" \
       "tomcat-8.5.99-0-linux-${OS_ARCH}-debian-12" \
     ) ; \
     for COMPONENT in "${COMPONENTS[@]}"; do \
